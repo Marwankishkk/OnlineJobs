@@ -6,6 +6,7 @@
 3-python3 manage.py makemigrations
 
 4-python3 manage.py migrate
+5-python3 manage.py add_data
 
 accounts/users        # to create a user
 accounts/users/employer/     #add user logged in to employer model
@@ -16,3 +17,4 @@ accounts/users/employee/profile   #shows your logged in employee data and edit i
 
 
 jobs/              # list jobs for any user and create a job by employer
+swagger/   # shows all the endpoints
