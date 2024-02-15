@@ -20,4 +20,10 @@ accounts/users/employee/profile   #shows your logged in employee data and edit i
 
 jobs/              # list jobs for any user and create a job by employer
 
+applicants/<int:jobs_id>       # show the jobs the logged in employer posted
+
+
+applicants/<int:jobs_id>/<int:id>/ # accept or reject the the application for a job
+
+
 swagger/   # shows all the endpoints
