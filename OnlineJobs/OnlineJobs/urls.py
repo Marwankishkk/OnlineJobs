@@ -45,4 +45,9 @@ urlpatterns = [
     path('redoc/', schema_view.with_ui('redoc',
          cache_timeout=0), name='schema-redoc'),
     path('', RedirectView.as_view(url='swagger/', permanent=False), name='index'),
+    path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.authtoken')),
+
+
+
 ]
